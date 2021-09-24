@@ -1,0 +1,14 @@
+button {
+  border: none;
+  background-color: #5179ff;
+  color: white;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  opacity: 0.9;
+}

@@ -1,0 +1,55 @@
+.techs_Div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.createTech_Div {
+  display: flex;
+  flex-direction: column;
+}
+.createTech_Div > input {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.createTech_Div > button {
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #faa0a0;
+  margin-bottom: 30px;
+}
+.createTech_Div > button:hover {
+  cursor: pointer;
+}
+.createTech_Div > button:active {
+  opacity: 0.9;
+}
+
+.createTech_buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.createTech_buttons > button {
+  border: none;
+  background-color: #5179ff;
+  color: white;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.createTech_buttons > button:hover {
+  cursor: pointer;
+}
+.createTech_buttons > button:active {
+  opacity: 0.9;
+}

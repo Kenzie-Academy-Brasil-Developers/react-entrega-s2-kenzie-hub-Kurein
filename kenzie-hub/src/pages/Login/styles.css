@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+form > input {
+  width: 40%;
+  margin-top: 10px;
+  max-width: 300px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+}
+form > button {
+  width: 50%;
+  max-width: 100px;
+  border: none;
+  background-color: #faa0a0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+form > button:hover {
+  cursor: pointer;
+}
+form > button:active {
+  opacity: 0.9;
+}

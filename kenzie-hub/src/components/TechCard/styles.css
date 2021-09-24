@@ -1,0 +1,22 @@
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tech > button {
+  border: none;
+  background-color: #5179ff;
+  border-radius: 2px;
+  color: white;
+}
+.tech > button:hover {
+  cursor: pointer;
+}
+.tech > button:active {
+  opacity: 0.9;
+}
