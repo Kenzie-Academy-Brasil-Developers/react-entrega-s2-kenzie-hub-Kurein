@@ -8,12 +8,14 @@ function Dashboard({ authenticated }) {
   const [title, setTitle] = useState("");
   const [status, setStatus] = useState("");
   const [techs, setTechs] = useState([]);
+  const [validation, setValidation] = useState(false);
 
   if (!authenticated) {
     return <Redirect to="/login" />;
   }
 
   function onClickFunction(str) {
+    setValidation(false);
     setStatus(str);
   }
 
@@ -31,6 +33,9 @@ function Dashboard({ authenticated }) {
           )}`,
         },
       });
+      setValidation(false);
+    } else {
+      setValidation(true);
     }
   }
 
@@ -43,6 +48,7 @@ function Dashboard({ authenticated }) {
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
+              setValidation(false);
             }}
           />
           <div className="createTech_buttons">
@@ -58,6 +64,7 @@ function Dashboard({ authenticated }) {
           </div>
           <button onClick={submitFunction}>Criar</button>
         </div>
+        {validation && <p>Nome ou nível não selecionados</p>}
         <div className="techs_Div">
           {techs.map((element) => {
             return (

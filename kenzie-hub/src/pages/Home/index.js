@@ -1,8 +1,12 @@
-import { useHistory } from "react-router";
+import { Redirect, useHistory } from "react-router";
 import "./styles.css";
 
 function Home({ authenticated }) {
   const history = useHistory();
+
+  if (authenticated) {
+    return <Redirect to="/dashboard" />;
+  }
 
   return (
     <div>

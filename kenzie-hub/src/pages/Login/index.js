@@ -44,13 +44,18 @@ function Login({ authenticated, setAuthenticated }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmitFunction)}>
-      <input placeholder="Email" {...register("email")} />
-      {errors.email?.message}
-      <input placeholder="Senha" {...register("password")} />
-      {errors.password?.message}
-      <button type="submit">Login</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit(onSubmitFunction)}>
+        <input placeholder="Email" {...register("email")} />
+        {errors.email?.message}
+        <input placeholder="Senha" {...register("password")} />
+        {errors.password?.message}
+        <button type="submit">Login</button>
+      </form>
+      <button onClick={() => history.push("/signup")}>
+        Ir para o Cadastro
+      </button>
+    </div>
   );
 }
 

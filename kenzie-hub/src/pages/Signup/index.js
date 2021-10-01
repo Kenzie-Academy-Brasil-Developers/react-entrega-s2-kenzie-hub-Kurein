@@ -105,6 +105,7 @@ function Signup({ authenticated }) {
         {errors.confirmPassword?.message}
         <button type="submit">Cadastrar</button>
       </form>
+      <button onClick={() => history.push("/login")}>Ir para o Login</button>
     </div>
   );
 }
